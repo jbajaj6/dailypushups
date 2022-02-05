@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ h2 {
+     color: white;
+     font-family: "Lucida Console", "Courier New", monospace;
+}
+ body {
+     background-color: black;
+     height: 100vh;
+     display: grid;
+     grid-template: repeat(15, 1fr) / repeat(15, 1fr);
+     overflow: hidden;
+}
+ .footer {
+     position: fixed;
+     left: 10px;
+     bottom: 5px;
+     right: 10px;
+     width: 100%;
+     color: white;
+     text-align: center;
+}
+ .content {
+     --positionX: 0;
+     --positionY: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ .css {
+     font-family: 'Fredoka One', cursive;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     animation: color 3s infinite linear;
+     text-shadow: 0 0 10px #000 a;
+     transition: all 0.5s;
+}
+ .css:nth-child(1) {
+     font-size: 100px;
+     animation-delay: 0s;
+     opacity: 0.1;
+     transform: translateX(calc(-50% - var(--positionX) * 21px)) translateY(calc(-50% - var(--positionY) * 21px));
+}
+ .css:nth-child(2) {
+     font-size: 110px;
+     animation-delay: -0.3s;
+     opacity: 0.2;
+     transform: translateX(calc(-50% - var(--positionX) * 18px)) translateY(calc(-50% - var(--positionY) * 18px));
+}
+ .css:nth-child(3) {
+     font-size: 120px;
+     animation-delay: -0.6s;
+     opacity: 0.3;
+     transform: translateX(calc(-50% - var(--positionX) * 15px)) translateY(calc(-50% - var(--positionY) * 15px));
+}
+ .css:nth-child(4) {
+     font-size: 130px;
+     animation-delay: -0.9s;
+     opacity: 0.4;
+     transform: translateX(calc(-50% - var(--positionX) * 12px)) translateY(calc(-50% - var(--positionY) * 12px));
+}
+ .css:nth-child(5) {
+     font-size: 140px;
+     animation-delay: -1.2s;
+     opacity: 0.5;
+     transform: translateX(calc(-50% - var(--positionX) * 9px)) translateY(calc(-50% - var(--positionY) * 9px));
+}
+ .css:nth-child(6) {
+     font-size: 150px;
+     animation-delay: -1.5s;
+     opacity: 0.6;
+     transform: translateX(calc(-50% - var(--positionX) * 6px)) translateY(calc(-50% - var(--positionY) * 6px));
+}
+ .css:nth-child(7) {
+     font-size: 160px;
+     animation-delay: -1.8s;
+     opacity: 0.7;
+     transform: translateX(calc(-50% - var(--positionX) * 3px)) translateY(calc(-50% - var(--positionY) * 3px));
+}
+ .css:nth-child(8) {
+     font-size: 170px;
+     animation-delay: -2.1s;
+     opacity: 0.8;
+     transform: translateX(calc(-50% - var(--positionX) * 0px)) translateY(calc(-50% - var(--positionY) * 0px));
+}
+ .css:nth-child(9) {
+     font-size: 180px;
+     animation-delay: -2.4s;
+     opacity: 0.9;
+     transform: translateX(calc(-50% - var(--positionX) * -3px)) translateY(calc(-50% - var(--positionY) * -3px));
+}
+ .css:nth-child(10) {
+     font-size: 190px;
+     animation-delay: -2.7s;
+     opacity: 1;
+     transform: translateX(calc(-50% - var(--positionX) * -6px)) translateY(calc(-50% - var(--positionY) * -6px));
+}
+ @keyframes color {
+     0% {
+         color: #ef8f8f;
+    }
+     10% {
+         color: #efc98f;
+    }
+     20% {
+         color: #dcef8f;
+    }
+     30% {
+         color: #a3ef8f;
+    }
+     40% {
+         color: #8fefb6;
+    }
+     50% {
+         color: #8fefef;
+    }
+     60% {
+         color: #8fb6ef;
+    }
+     70% {
+         color: #a38fef;
+    }
+     80% {
+         color: #dc8fef;
+    }
+     90% {
+         color: #ef8fc9;
+    }
+     100% {
+         color: #ef8f8f;
+    }
+}
+ 
