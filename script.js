@@ -9,6 +9,8 @@ const daysEl7 = document.getElementById('days7');
 const daysEl8 = document.getElementById('days8');
 const daysEl9 = document.getElementById('days9');
 
+const totalP = document.getElementById('total');
+
 const start = "31 Dec 2021";
 
 function countdown() {
@@ -18,6 +20,11 @@ function countdown() {
   const totalSeconds = (currentDate - startDate) / 1000;
   
   const days = Math.floor(totalSeconds/3600 /24);
+  
+  const total = 0;
+  for (let i = 0; i < days+1; i++) {
+    total += i;
+  }
   
   daysEl0.innerHTML = days;
   daysEl1.innerHTML = days;
@@ -29,6 +36,7 @@ function countdown() {
   daysEl7.innerHTML = days;
   daysEl8.innerHTML = days;
   daysEl9.innerHTML = days;
+  totalP.innerHTML = total;
 }
   
   countdown();
