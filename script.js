@@ -9,35 +9,24 @@ const daysEl7 = document.getElementById('days7');
 const daysEl8 = document.getElementById('days8');
 const daysEl9 = document.getElementById('days9');
 
-const totalP = document.getElementById('total');
+const totalP = document.getElementById('pushups');
 
 const start = "31 Dec 2021";
 
-function countdown() {
-  const startDate = new Date(start);
-  const currentDate = new Date();
-  
-  const totalSeconds = (currentDate - startDate) / 1000;
-  
-  const days = Math.floor(totalSeconds/3600 /24);
-  
-  const total = 0;
-  for (let i = 0; i < days+1; i++) {
-    total += i;
-  }
-  
-  daysEl0.innerHTML = days;
-  daysEl1.innerHTML = days;
-  daysEl2.innerHTML = days;
-  daysEl3.innerHTML = days;
-  daysEl4.innerHTML = days;
-  daysEl5.innerHTML = days;
-  daysEl6.innerHTML = days;
-  daysEl7.innerHTML = days;
-  daysEl8.innerHTML = days;
-  daysEl9.innerHTML = days;
-  totalP.innerHTML = total;
-}
-  
-  countdown();
-  setInterval(countdown, 1000);
+const startDate = new Date(start);
+const currentDate = new Date();
+
+const totalSeconds = (currentDate - startDate) / 1000;
+
+const days = Math.floor(totalSeconds / 3600 / 24);
+
+daysEl0.innerHTML = days;
+daysEl1.innerHTML = days;
+daysEl2.innerHTML = days;
+daysEl3.innerHTML = days;
+daysEl4.innerHTML = days;
+daysEl5.innerHTML = days;
+daysEl6.innerHTML = days;
+daysEl7.innerHTML = days;
+daysEl8.innerHTML = days;
+daysEl9.innerHTML = days;
